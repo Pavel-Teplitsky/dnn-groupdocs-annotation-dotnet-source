@@ -19,12 +19,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("GroupDocsInstallableAnnotation")]
-[assembly: AssemblyDescription("GroupDocs DotNetNuke installable Annotation plugin")]
+[assembly: AssemblyTitle("GroupDocsDnnInstallableAnnotation")]
+[assembly: AssemblyDescription("A DotNetNuke Module from GroupDocs")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("groupdocs-dnn-installable-annotation")]
-[assembly: AssemblyCopyright("Copyright © groupdocs.com 2013, All rights reserved.")]
+[assembly: AssemblyProduct("")]
+[assembly: AssemblyCopyright("2012 GroupDocs")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
@@ -40,9 +40,8 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
 
-[assembly: AssemblyVersion("1.0.0")]
+[assembly: AssemblyVersion("01.00.00.*")]
 [assembly: AssemblyDelaySign(false)]
 [assembly: AssemblyKeyFile("")]
-[assembly: Guid("b63f9f6b-ef3e-4247-a100-eaa1a82c2fa1")]
 [assembly: AssemblyKeyName("")]
 

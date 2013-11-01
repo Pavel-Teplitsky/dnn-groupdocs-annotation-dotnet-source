@@ -1,12 +1,12 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="Groupdocs.groupdocs_dnn_installable_annotation" type="Module" version="01.00.03">
-      <friendlyName>groupdocs_dnn_installable_annotation</friendlyName>
-      <description>Groupdocs groupdocs_dnn_installable_annotation module</description>
+    <package name="Groupdocs.DnnInstallableAnnotation" type="Module" version="01.00.01">
+      <friendlyName>DnnInstallableAnnotation</friendlyName>
+      <description>Groupdocs DnnInstallableAnnotation module</description>
       <iconFile>Images/icon_extensions.gif</iconFile>
       <owner>
-        <name>Groupdocs</name>
-        <organization>Groupdocs</organization>
+        <name>GroupDocs</name>
+        <organization>GroupDocs</organization>
         <url>http://www.groupdocs.com</url>
         <email>support@groupdocs.com</email>
       </owner>
@@ -19,7 +19,7 @@
       <components>
         <component type="Script">
           <scripts>
-            <basePath>DesktopModules\groupdocs_dnn_installable_annotation</basePath>
+            <basePath>DesktopModules\DnnInstallableAnnotation</basePath>
             <script type="Install">
               <path>Providers\DataProviders\SqlDataProvider</path>
               <name>00.00.01.SqlDataProvider</name>
@@ -35,7 +35,7 @@
 
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>DesktopModules/groupdocs_dnn_installable_annotation</basePath>
+            <basePath>DesktopModules/DnnInstallableAnnotation</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
@@ -44,18 +44,18 @@
 
         <component type="Module">
           <desktopModule>
-            <moduleName>groupdocs_dnn_installable_annotation</moduleName>
-            <foldername>groupdocs_dnn_installable_annotation</foldername>
-            <businessControllerClass>DotNetNuke.Modules.groupdocs_dnn_installable_annotation.Components.FeatureController</businessControllerClass>
+            <moduleName>DnnInstallableAnnotation</moduleName>
+            <foldername>DnnInstallableAnnotation</foldername>
+            <businessControllerClass>DotNetNuke.Modules.DnnInstallableAnnotation.Components.FeatureController</businessControllerClass>
             <supportedFeatures />
             <moduleDefinitions>
               <moduleDefinition>
-                <friendlyName>groupdocs_dnn_installable_annotation</friendlyName>
+                <friendlyName>DnnInstallableAnnotation</friendlyName>
                 <defaultCacheTime>0</defaultCacheTime>
                 <moduleControls>
                   <moduleControl>
                     <controlKey />
-                    <controlSrc>DesktopModules/groupdocs_dnn_installable_annotation/View.ascx</controlSrc>
+                    <controlSrc>DesktopModules/DnnInstallableAnnotation/View.ascx</controlSrc>
                     <supportsPartialRendering>False</supportsPartialRendering>
                     <controlTitle />
                     <controlType>View</controlType>
@@ -65,7 +65,7 @@
                   </moduleControl>
                   <moduleControl>
                     <controlKey>Edit</controlKey>
-                    <controlSrc>DesktopModules/groupdocs_dnn_installable_annotation/Edit.ascx</controlSrc>
+                    <controlSrc>DesktopModules/DnnInstallableAnnotation/Edit.ascx</controlSrc>
                     <supportsPartialRendering>False</supportsPartialRendering>
                     <controlTitle>Edit Content</controlTitle>
                     <controlType>Edit</controlType>
@@ -76,9 +76,9 @@
                   </moduleControl>
                   <moduleControl>
                     <controlKey>Settings</controlKey>
-                    <controlSrc>DesktopModules/groupdocs_dnn_installable_annotation/Settings.ascx</controlSrc>
+                    <controlSrc>DesktopModules/DnnInstallableAnnotation/Settings.ascx</controlSrc>
                     <supportsPartialRendering>False</supportsPartialRendering>
-                    <controlTitle>groupdocs_dnn_installable_annotation Settings</controlTitle>
+                    <controlTitle>DnnInstallableAnnotation Settings</controlTitle>
                     <controlType>Edit</controlType>
                     <iconFile />
                     <helpUrl />
@@ -93,7 +93,7 @@
           <assemblies>
             <basePath>bin</basePath>
             <assembly>
-              <name>groupdocs_dnn_installable_annotation.dll</name>
+              <name>DnnInstallableAnnotation.dll</name>
             </assembly>
           </assemblies>
         </component>

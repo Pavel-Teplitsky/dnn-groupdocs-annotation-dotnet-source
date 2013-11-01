@@ -16,9 +16,10 @@ using DotNetNuke.Entities.Modules;
 using DotNetNuke.Entities.Modules.Actions;
 using DotNetNuke.Services.Localization;
 using DotNetNuke.Security;
+using DotNetNuke.Modules.DnnInstallableAnnotation;
 
 
-namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
+namespace DotNetNuke.Modules.DnnInstallableAnnotation
 {
 
     /// -----------------------------------------------------------------------------
@@ -29,13 +30,14 @@ namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
     /// 
     /// View may be the only control you have in your project depending on the complexity of your module
     /// 
-    /// Because the control inherits from EmbedAnnotationModuleBase you have access to any custom properties
+    /// Because the control inherits from DnnInstallableAnnotationModuleBase you have access to any custom properties
     /// defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
     /// 
     /// </summary>
     /// -----------------------------------------------------------------------------
-    public partial class View : DnnModuleBase
+    public partial class View : ModuleSettingsBase, IActionable
     {
+
         override protected void OnInit(EventArgs e)
         {
             InitializeComponent();
@@ -59,15 +61,31 @@ namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
             {
                 if (Settings.Contains("URL"))
                 {
-                    documentAnnotation.Attributes.Add("Src", Settings["URL"].ToString());
+                    URL.Value = String.Format("{0}", Settings["URL"]);
                 }
                 if (Settings.Contains("Width"))
                 {
-                    documentAnnotation.Attributes.Add("Width", Settings["Width"].ToString());
+                    Width.Value = String.Format("{0}", Settings["Width"]);
                 }
                 if (Settings.Contains("Height"))
                 {
-                    documentAnnotation.Attributes.Add("Height", Settings["Height"].ToString());
+                    Height.Value = String.Format("{0}", Settings["Height"]);
+                }
+                if (Settings.Contains("DefaultFileName"))
+                {
+                    DefaultFileName.Value = String.Format("{0}", Settings["DefaultFileName"]);
+                }
+                if (Settings.Contains("UseHttpHandlers"))
+                {
+                    UseHttpHandlers.Value = String.Format("{0}", Settings["UseHttpHandlers"]);
+                    if (Boolean.Parse(Settings["UseHttpHandlers"].ToString()) == true)
+                    {
+                        UrlNameSufix.Value = "Handler";
+                    }
+                    else
+                    {
+                        UrlNameSufix.Value = "";
+                    }
                 }
             }
             catch (Exception exc) //Module failed to load
@@ -75,6 +93,8 @@ namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
                 Exceptions.ProcessModuleLoadException(this, exc);
             }
         }
+
+        #region Optional Interfaces
 
         public ModuleActionCollection ModuleActions
         {
@@ -85,5 +105,9 @@ namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
                 return Actions;
             }
         }
+
+        #endregion
+
     }
+
 }

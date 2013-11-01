@@ -14,23 +14,27 @@
     </file>
     <file>
       <path />
-      <name>groupdocs_dnn_installable_annotation.csproj</name>
+      <name>DnnInstallableAnnotation.csproj</name>
     </file>
     <file>
       <path />
-      <name>groupdocs_dnn_installable_annotation.sln</name>
+      <name>DnnInstallableAnnotation.sln</name>
     </file>
     <file>
       <path />
-      <name>groupdocs_dnn_installable_annotation.xml</name>
+      <name>DnnInstallableAnnotation.xml</name>
     </file>
     <file>
       <path />
-      <name>groupdocs_dnn_installable_annotationModuleBase.cs</name>
+      <name>DnnInstallableAnnotationModuleBase.cs</name>
     </file>
     <file>
       <path />
-      <name>groupdocs_dnn_installable_annotationSettingsBase.cs</name>
+      <name>DnnInstallableAnnotationSettingsBase.cs</name>
+    </file>
+    <file>
+      <path />
+      <name>Groupdocs.EmbeddedDocumentComparison.csproj</name>
     </file>
     <file>
       <path />
@@ -67,18 +71,6 @@
     <file>
       <path />
       <name>View.ascx.designer.cs</name>
-    </file>
-    <file>
-      <path>App_LocalResources/</path>
-      <name>Edit.ascx.resx</name>
-    </file>
-    <file>
-      <path>App_LocalResources/</path>
-      <name>Settings.ascx.resx</name>
-    </file>
-    <file>
-      <path>App_LocalResources/</path>
-      <name>View.ascx.resx</name>
     </file>
     <file>
       <path>BuildScripts/</path>

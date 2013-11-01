@@ -15,23 +15,26 @@ using DotNetNuke.Services.Exceptions;
 using DotNetNuke.Entities.Modules;
 using DotNetNuke.Common;
 
-namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
+namespace DotNetNuke.Modules.DnnInstallableAnnotation
 {
 
     /// -----------------------------------------------------------------------------
     /// <summary>
-    /// The EditEmbedAnnotation class is used to manage content
+    /// The EditDnnInstallableAnnotation class is used to manage content
     /// 
     /// Typically your edit control would be used to create new content, or edit existing content within your module.
     /// The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
     /// 
-    /// Because the control inherits from EmbedAnnotationModuleBase you have access to any custom properties
+    /// Because the control inherits from DnnInstallableAnnotationModuleBase you have access to any custom properties
     /// defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
     /// 
     /// </summary>
     /// -----------------------------------------------------------------------------
-    public partial class Edit : DnnModuleBase
+    public partial class Edit : PortalModuleBase
     {
+
+        #region Event Handlers
+
         override protected void OnInit(EventArgs e)
         {
             InitializeComponent();
@@ -71,6 +74,9 @@ namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
                 Exceptions.ProcessModuleLoadException(this, exc);
             }
         }
+
+        #endregion
+
         protected void cmdUpdate_Click(object sender, EventArgs e)
         {
             try
@@ -94,4 +100,5 @@ namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
             Response.Redirect(Globals.NavigateURL(), true);
         }
     }
+
 }

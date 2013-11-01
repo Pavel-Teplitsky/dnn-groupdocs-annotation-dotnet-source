@@ -1,4 +1,4 @@
-﻿<h3>GroupDocs DotNetNuke Installable Annotation</h3>
+﻿<h3>DnnInstallableAnnotation</h3>
 <p class="Contributor">
 	Groupdocs <br />
 	<a href="mailto:support@groupdocs.com">support@groupdocs.com</a><br />
@@ -6,7 +6,7 @@
 </p>
 <hr/>
 <div class="License">
-	<h3>About the GroupDocs DotNetNuke Installable Annotation</h3>
+	<h3>About the DnnInstallableAnnotation</h3>
 	<p class="Owner">
 		<b>Version CHANGEME</b><br /><br />
 	</p>

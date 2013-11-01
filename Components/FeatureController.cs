@@ -15,12 +15,12 @@ using System.Collections.Generic;
 using DotNetNuke.Entities.Modules;
 using DotNetNuke.Services.Search;
 
-namespace DotNetNuke.Modules.EmbedAnnotation.Components
+namespace DotNetNuke.Modules.DnnInstallableAnnotation.Components
 {
 
     /// -----------------------------------------------------------------------------
     /// <summary>
-    /// The Controller class for EmbedAnnotation
+    /// The Controller class for DnnInstallableAnnotation
     /// 
     /// The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
     /// DotNetNuke will poll this class to find out which Interfaces the class implements. 
@@ -53,18 +53,18 @@ namespace DotNetNuke.Modules.EmbedAnnotation.Components
         //{
         //string strXML = "";
 
-        //List<EmbedAnnotationInfo> colEmbedAnnotations = GetEmbedAnnotations(ModuleID);
-        //if (colEmbedAnnotations.Count != 0)
+        //List<DnnInstallableAnnotation> colDnnInstallableAnnotations = GetDnnInstallableAnnotations(ModuleID);
+        //if (colDnnInstallableAnnotations.Count != 0)
         //{
-        //    strXML += "<EmbedAnnotations>";
+        //    strXML += "<DnnInstallableAnnotations>";
 
-        //    foreach (EmbedAnnotationInfo objEmbedAnnotation in colEmbedAnnotations)
+        //    foreach (DnnInstallableAnnotation objDnnInstallableAnnotation in colDnnInstallableAnnotations)
         //    {
-        //        strXML += "<EmbedAnnotation>";
-        //        strXML += "<content>" + DotNetNuke.Common.Utilities.XmlUtils.XMLEncode(objEmbedAnnotation.Content) + "</content>";
-        //        strXML += "</EmbedAnnotation>";
+        //        strXML += "<DnnInstallableAnnotation>";
+        //        strXML += "<content>" + DotNetNuke.Common.Utilities.XmlUtils.XMLEncode(objDnnInstallableAnnotation.Content) + "</content>";
+        //        strXML += "</DnnInstallableAnnotation>";
         //    }
-        //    strXML += "</EmbedAnnotations>";
+        //    strXML += "</DnnInstallableAnnotations>";
         //}
 
         //return strXML;
@@ -83,14 +83,14 @@ namespace DotNetNuke.Modules.EmbedAnnotation.Components
         /// -----------------------------------------------------------------------------
         //public void ImportModule(int ModuleID, string Content, string Version, int UserID)
         //{
-        //XmlNode xmlEmbedAnnotations = DotNetNuke.Common.Globals.GetContent(Content, "EmbedAnnotations");
-        //foreach (XmlNode xmlEmbedAnnotation in xmlEmbedAnnotations.SelectNodes("EmbedAnnotation"))
+        //XmlNode xmlDnnInstallableAnnotations = DotNetNuke.Common.Globals.GetContent(Content, "DnnInstallableAnnotations");
+        //foreach (XmlNode xmlDnnInstallableAnnotation in xmlDnnInstallableAnnotations.SelectNodes("DnnInstallableAnnotation"))
         //{
-        //    EmbedAnnotationInfo objEmbedAnnotation = new EmbedAnnotationInfo();
-        //    objEmbedAnnotation.ModuleId = ModuleID;
-        //    objEmbedAnnotation.Content = xmlEmbedAnnotation.SelectSingleNode("content").InnerText;
-        //    objEmbedAnnotation.CreatedByUser = UserID;
-        //    AddEmbedAnnotation(objEmbedAnnotation);
+        //    DnnInstallableAnnotationInfo objDnnInstallableAnnotation = new DnnInstallableAnnotationInfo();
+        //    objDnnInstallableAnnotation.ModuleId = ModuleID;
+        //    objDnnInstallableAnnotation.Content = xmlDnnInstallableAnnotation.SelectSingleNode("content").InnerText;
+        //    objDnnInstallableAnnotation.CreatedByUser = UserID;
+        //    AddDnnInstallableAnnotation(objDnnInstallableAnnotation);
         //}
 
         //	throw new System.NotImplementedException("The method or operation is not implemented.");
@@ -106,11 +106,11 @@ namespace DotNetNuke.Modules.EmbedAnnotation.Components
         //{
         //SearchItemInfoCollection SearchItemCollection = new SearchItemInfoCollection();
 
-        //List<EmbedAnnotationInfo> colEmbedAnnotations = GetEmbedAnnotations(ModInfo.ModuleID);
+        //List<DnnInstallableAnnotationInfo> colDnnInstallableAnnotations = GetDnnInstallableAnnotations(ModInfo.ModuleID);
 
-        //foreach (EmbedAnnotationInfo objEmbedAnnotation in colEmbedAnnotations)
+        //foreach (DnnInstallableAnnotationInfo objDnnInstallableAnnotation in colDnnInstallableAnnotations)
         //{
-        //    SearchItemInfo SearchItem = new SearchItemInfo(ModInfo.ModuleTitle, objEmbedAnnotation.Content, objEmbedAnnotation.CreatedByUser, objEmbedAnnotation.CreatedDate, ModInfo.ModuleID, objEmbedAnnotation.ItemId.ToString(), objEmbedAnnotation.Content, "ItemId=" + objEmbedAnnotation.ItemId.ToString());
+        //    SearchItemInfo SearchItem = new SearchItemInfo(ModInfo.ModuleTitle, objDnnInstallableAnnotation.Content, objDnnInstallableAnnotation.CreatedByUser, objDnnInstallableAnnotation.CreatedDate, ModInfo.ModuleID, objDnnInstallableAnnotation.ItemId.ToString(), objDnnInstallableAnnotation.Content, "ItemId=" + objDnnInstallableAnnotation.ItemId.ToString());
         //    SearchItemCollection.Add(SearchItem);
         //}
 

@@ -15,7 +15,7 @@ using DotNetNuke.Services.Exceptions;
 using DotNetNuke.Entities.Modules;
 
 
-namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
+namespace DotNetNuke.Modules.DnnInstallableAnnotation
 {
 
     /// -----------------------------------------------------------------------------
@@ -34,12 +34,14 @@ namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
     /// 
     /// Below we have some examples of how to access these settings but you will need to uncomment to use.
     /// 
-    /// Because the control inherits from EmbedAnnotationSettingsBase you have access to any custom properties
+    /// Because the control inherits from DnnInstallableAnnotationSettingsBase you have access to any custom properties
     /// defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
     /// </summary>
     /// -----------------------------------------------------------------------------
     public partial class Settings : ModuleSettingsBase
     {
+
+
         /// -----------------------------------------------------------------------------
         /// <summary>
         /// LoadSettings loads the settings from the Database and displays them
@@ -52,13 +54,25 @@ namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
                 if (Page.IsPostBack == false)
                 {
                     if (Settings.Contains("URL"))
+                    {
                         txtUrl.Text = Settings["URL"].ToString();
-
+                    }
                     if (Settings.Contains("Width"))
+                    {
                         txtWidth.Text = Settings["Width"].ToString();
-
+                    }
                     if (Settings.Contains("Height"))
+                    {
                         txtHeight.Text = Settings["Height"].ToString();
+                    }
+                    if (Settings.Contains("DefaultFileName"))
+                    {
+                        txtDefaultFileName.Text = Settings["DefaultFileName"].ToString();
+                    }
+                    if (Settings.Contains("UseHttpHandlers"))
+                    {
+                        ckbUseHttpHandlers.Checked = Boolean.Parse(Settings["UseHttpHandlers"].ToString());
+                    }
                 }
             }
             catch (Exception exc) //Module failed to load
@@ -83,6 +97,8 @@ namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
                 modules.UpdateModuleSetting(ModuleId, "URL", txtUrl.Text);
                 modules.UpdateModuleSetting(ModuleId, "Width", txtWidth.Text);
                 modules.UpdateModuleSetting(ModuleId, "Height", txtHeight.Text);
+                modules.UpdateModuleSetting(ModuleId, "DefaultFileName", txtDefaultFileName.Text);
+                modules.UpdateModuleSetting(ModuleId, "UseHttpHandlers", ckbUseHttpHandlers.Checked.ToString().ToLower());
             }
             catch (Exception exc) //Module failed to load
             {
@@ -91,3 +107,4 @@ namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
         }
     }
 }
+

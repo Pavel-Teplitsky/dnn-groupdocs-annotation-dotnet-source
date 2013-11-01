@@ -16,7 +16,7 @@ using DotNetNuke.Common.Utilities;
 using DotNetNuke.Framework.Providers;
 
 
-namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation.Data
+namespace DotNetNuke.Modules.DnnInstallableAnnotation.Data
 {
 
     /// -----------------------------------------------------------------------------
@@ -29,6 +29,9 @@ namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation.Data
     /// -----------------------------------------------------------------------------
     public abstract class DataProvider
     {
+
+        #region Shared/Static Methods
+
         private static DataProvider provider;
 
         // return the provider
@@ -36,7 +39,7 @@ namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation.Data
         {
             if (provider == null)
             {
-                const string assembly = "DotNetNuke.Modules.InstallableAnnotation.Data.SqlDataprovider,InstallableAnnotation";
+                const string assembly = "DotNetNuke.Modules.DnnInstallableAnnotation.Data.SqlDataprovider,DnnInstallableAnnotation";
                 Type objectType = Type.GetType(assembly, true, true);
 
                 provider = (DataProvider)Activator.CreateInstance(objectType);
@@ -68,5 +71,18 @@ namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation.Data
             newConnection.Open();
             return newConnection;
         }
+
+        #endregion
+
+        #region Abstract methods
+
+        //public abstract IDataReader GetItems(int userId, int portalId);
+
+        //public abstract IDataReader GetItem(int itemId);        
+
+
+        #endregion
+
     }
+
 }

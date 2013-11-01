@@ -14,7 +14,7 @@ using System;
 using DotNetNuke.Common.Utilities;
 using DotNetNuke.Framework.Providers;
 
-namespace DotNetNuke.Modules.EmbedAnnotation.Data
+namespace DotNetNuke.Modules.DnnInstallableAnnotation.Data
 {
 
     /// -----------------------------------------------------------------------------
@@ -33,7 +33,7 @@ namespace DotNetNuke.Modules.EmbedAnnotation.Data
         #region Private Members
 
         private const string ProviderType = "data";
-        private const string ModuleQualifier = "EmbedAnnotation_";
+        private const string ModuleQualifier = "DnnInstallableAnnotation_";
 
         private readonly ProviderConfiguration _providerConfiguration = ProviderConfiguration.GetProviderConfiguration(ProviderType);
         private readonly string _connectionString;

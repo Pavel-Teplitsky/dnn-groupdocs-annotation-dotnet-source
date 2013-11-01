@@ -7,7 +7,7 @@
 // </автоматически создаваемое>
 //------------------------------------------------------------------------------
 
-namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation {
+namespace DotNetNuke.Modules.DnnInstallableAnnotation {
     
     
     public partial class Edit {

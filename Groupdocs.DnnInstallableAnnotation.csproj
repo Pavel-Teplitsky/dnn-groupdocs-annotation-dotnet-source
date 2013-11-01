@@ -9,8 +9,8 @@
     <ProjectGuid>{2B235259-7D51-41DF-814A-9C377F66412A}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>DotNetNuke.Modules.Groupdocs.groupdocs_dnn_installable_annotation</RootNamespace>
-    <AssemblyName>Groupdocs.groupdocs_dnn_installable_annotation</AssemblyName>
+    <RootNamespace>DotNetNuke.Modules.Groupdocs.EmbeddedDocumentComparison</RootNamespace>
+    <AssemblyName>Groupdocs.EmbeddedDocumentComparison</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -24,7 +24,7 @@
     <DebugType>full</DebugType>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <OutputPath>..\..\bin\</OutputPath>
-    <DocumentationFile>groupdocs_dnn_installable_annotation.xml</DocumentationFile>
+    <DocumentationFile>DnnInstallableAnnotation.xml</DocumentationFile>
     <WarningLevel>1</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
@@ -33,7 +33,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <OutputPath>..\..\bin\</OutputPath>
-    <DocumentationFile>groupdocs_dnn_installable_annotation.xml</DocumentationFile>
+    <DocumentationFile>DnnInstallableAnnotation.xml</DocumentationFile>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
@@ -114,7 +114,7 @@
       <DependentUpon>Settings.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="groupdocs_dnn_installable_annotationSettingsBase.cs">
+    <Compile Include="DnnInstallableAnnotationSettingsBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="View.ascx.designer.cs">
@@ -124,7 +124,7 @@
       <DependentUpon>View.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="groupdocs_dnn_installable_annotationModuleBase.cs">
+    <Compile Include="DnnInstallableAnnotationModuleBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
@@ -137,7 +137,7 @@
     <None Include="BuildScripts\ModulePackage.targets" />
     <None Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
     <None Include="Providers\DataProviders\SqlDataProvider\00.00.01.SqlDataProvider" />
-    <None Include="groupdocs_dnn_installable_annotation.dnn" />
+    <None Include="DnnInstallableAnnotation.dnn" />
     <None Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
     <None Include="module.css" />
     <None Include="ReleaseNotes.txt" />
@@ -153,8 +153,8 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="'$(Solutions.VSVersion)' == '9.0'" />
   <PropertyGroup>
     <Extension>zip</Extension>
-    <DNNFileName>groupdocs_dnn_installable_annotation</DNNFileName>
-    <PackageName>groupdocs_dnn_installable_annotation</PackageName>
+    <DNNFileName>DnnInstallableAnnotation</DNNFileName>
+    <PackageName>DnnInstallableAnnotation</PackageName>
     <MSBuildCommunityTasksPath>$(MSBuildProjectDirectory)\BuildScripts</MSBuildCommunityTasksPath>
   </PropertyGroup>
   <Import Project="BuildScripts\ModulePackage.Targets" />
