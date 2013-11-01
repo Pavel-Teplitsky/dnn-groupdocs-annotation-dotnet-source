@@ -1,0 +1,12 @@
+﻿THESE ARE SAMPLE RELEASE NOTES<br/>
+ <p><strong>DNN Module RELEASE NOTES</strong></p>
+
+        Copyright (C) 2009, 2010, <a href="http://www.subodh.com">Subodh.com</a>, All rights reserved.
+ <p>     
+ Before Installing, please note:</p>
+ <ol>
+    <li><b>THIS IS Blah blah blah</b><br />
+Even more Blah ... Listen to Chris Hammond. Blah Blah Blah... </li>
+        <li><b>BACKUP BEFORE YOU INSTALL</b><br />
+        As a matter of precaution you should always backup your existing environment before attempting to install a new module</li>
+</ol>
