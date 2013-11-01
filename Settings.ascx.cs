@@ -1,35 +1,44 @@
 /*
- * Copyright (c) 2010 Subodh.com
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
- * 
- * 
-DISCLAIMER: groupdocs_dnn_installable_annotation template is not affiliated nor endorsed by DNN Corp. 
- */
+' Copyright (c) 2012  Groupdocs
+'  All rights reserved.
+' 
+' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+' TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+' THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+' CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+' DEALINGS IN THE SOFTWARE.
+' 
+*/
 
 using System;
-using DotNetNuke.Entities.Modules;
 using DotNetNuke.Services.Exceptions;
+using DotNetNuke.Entities.Modules;
 
-namespace groupdocs_dnn_installable_annotation
+
+namespace DotNetNuke.Modules.groupdocs_dnn_installable_annotation
 {
-    public partial class Control1Settings : ModuleSettingsBase
+
+    /// -----------------------------------------------------------------------------
+    /// <summary>
+    /// The Settings class manages Module Settings
+    /// 
+    /// Typically your settings control would be used to manage settings for your module.
+    /// There are two types of settings, ModuleSettings, and TabModuleSettings.
+    /// 
+    /// ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+    /// 
+    /// TabModuleSettings apply only to the current module on the current page, if you copy that module to
+    /// another page the settings are not transferred.
+    /// 
+    /// If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+    /// 
+    /// Below we have some examples of how to access these settings but you will need to uncomment to use.
+    /// 
+    /// Because the control inherits from EmbedAnnotationSettingsBase you have access to any custom properties
+    /// defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+    /// </summary>
+    /// -----------------------------------------------------------------------------
+    public partial class Settings : ModuleSettingsBase
     {
         /// -----------------------------------------------------------------------------
         /// <summary>

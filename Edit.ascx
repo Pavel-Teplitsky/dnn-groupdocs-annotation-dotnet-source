@@ -1,5 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="groupdocs_dnn_installable_annotation.Edit"
-    CodeBehind="Edit.ascx.cs" %>
+<%@ Control language="C#" Inherits="DotNetNuke.Modules.groupdocs_dnn_installable_annotation.Edit" AutoEventWireup="false"  Codebehind="Edit.ascx.cs" %>
 
 <fieldset class="dnnForm">
     <b>Document GUID, frame width and height have to be configured in Settings tab.</b><br /><br />

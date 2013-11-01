@@ -1,5 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="groupdocs_dnn_installable_annotation.Control1Settings"
-    CodeBehind="Settings.ascx.cs" %>
+<%@ Control Language="C#" AutoEventWireup="false" Inherits="DotNetNuke.Modules.groupdocs_dnn_installable_annotation.Settings" Codebehind="Settings.ascx.cs" %>
 <%@ Register TagName="label" TagPrefix="dnn" Src="~/controls/labelcontrol.ascx" %>
 
 
