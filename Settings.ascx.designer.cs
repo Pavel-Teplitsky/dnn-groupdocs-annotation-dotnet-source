@@ -65,41 +65,5 @@ namespace DotNetNuke.Modules.DnnInstallableAnnotation {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtHeight;
-        
-        /// <summary>
-        /// lblDefaultFileName элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.UserControl lblDefaultFileName;
-        
-        /// <summary>
-        /// txtDefaultFileName элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDefaultFileName;
-        
-        /// <summary>
-        /// lblUseHttpHandlers элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.UserControl lblUseHttpHandlers;
-        
-        /// <summary>
-        /// ckbUseHttpHandlers элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox ckbUseHttpHandlers;
     }
 }

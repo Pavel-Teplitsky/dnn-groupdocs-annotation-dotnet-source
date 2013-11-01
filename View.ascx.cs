@@ -61,31 +61,15 @@ namespace DotNetNuke.Modules.DnnInstallableAnnotation
             {
                 if (Settings.Contains("URL"))
                 {
-                    URL.Value = String.Format("{0}", Settings["URL"]);
+                    documentAnnotation.Attributes.Add("src", Settings["URL"].ToString());
                 }
                 if (Settings.Contains("Width"))
                 {
-                    Width.Value = String.Format("{0}", Settings["Width"]);
+                    documentAnnotation.Attributes.Add("width", Settings["Width"].ToString());
                 }
                 if (Settings.Contains("Height"))
                 {
-                    Height.Value = String.Format("{0}", Settings["Height"]);
-                }
-                if (Settings.Contains("DefaultFileName"))
-                {
-                    DefaultFileName.Value = String.Format("{0}", Settings["DefaultFileName"]);
-                }
-                if (Settings.Contains("UseHttpHandlers"))
-                {
-                    UseHttpHandlers.Value = String.Format("{0}", Settings["UseHttpHandlers"]);
-                    if (Boolean.Parse(Settings["UseHttpHandlers"].ToString()) == true)
-                    {
-                        UrlNameSufix.Value = "Handler";
-                    }
-                    else
-                    {
-                        UrlNameSufix.Value = "";
-                    }
+                    documentAnnotation.Attributes.Add("height", Settings["Height"].ToString());
                 }
             }
             catch (Exception exc) //Module failed to load

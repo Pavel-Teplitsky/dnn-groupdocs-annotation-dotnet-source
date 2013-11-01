@@ -4,6 +4,116 @@
         <name>DnnInstallableAnnotation</name>
     </assembly>
     <members>
+        <member name="T:DotNetNuke.Modules.DnnInstallableAnnotation.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.DnnInstallableAnnotation.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from DnnInstallableAnnotationModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.View.documentAnnotation">
+            <summary>
+            documentAnnotation элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.DnnInstallableAnnotation.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.DnnInstallableAnnotation.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.DnnInstallableAnnotation.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditDnnInstallableAnnotation class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from DnnInstallableAnnotationModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.Edit.Title">
+            <summary>
+            Title элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.Edit.txtDescription">
+            <summary>
+            txtDescription элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.Edit.cmdUpdate">
+            <summary>
+            cmdUpdate элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.Edit.cmdCancel">
+            <summary>
+            cmdCancel элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.DnnInstallableAnnotation.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
         <member name="T:DotNetNuke.Modules.DnnInstallableAnnotation.Settings">
             -----------------------------------------------------------------------------
             <summary>
@@ -94,118 +204,6 @@
             Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
             </remarks>
         </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.Settings.lblDefaultFileName">
-            <summary>
-            lblDefaultFileName элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.Settings.txtDefaultFileName">
-            <summary>
-            txtDefaultFileName элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.Settings.lblUseHttpHandlers">
-            <summary>
-            lblUseHttpHandlers элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.Settings.ckbUseHttpHandlers">
-            <summary>
-            ckbUseHttpHandlers элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="T:DotNetNuke.Modules.DnnInstallableAnnotation.View">
-            -----------------------------------------------------------------------------
-            <summary>
-            The View class displays the content
-            
-            Typically your view control would be used to display content or functionality in your module.
-            
-            View may be the only control you have in your project depending on the complexity of your module
-            
-            Because the control inherits from DnnInstallableAnnotationModuleBase you have access to any custom properties
-            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
-            
-            </summary>
-            -----------------------------------------------------------------------------
-        </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.View.URL">
-            <summary>
-            URL элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.View.Width">
-            <summary>
-            Width элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.View.Height">
-            <summary>
-            Height элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.View.DefaultFileName">
-            <summary>
-            DefaultFileName элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.View.UseHttpHandlers">
-            <summary>
-            UseHttpHandlers элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.View.UrlNameSufix">
-            <summary>
-            UrlNameSufix элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="M:DotNetNuke.Modules.DnnInstallableAnnotation.View.Page_Load(System.Object,System.EventArgs)">
-            -----------------------------------------------------------------------------
-            <summary>
-            Page_Load runs when the control is loaded
-            </summary>
-            -----------------------------------------------------------------------------
-        </member>
         <member name="T:DotNetNuke.Modules.DnnInstallableAnnotation.Components.FeatureController">
             -----------------------------------------------------------------------------
             <summary>
@@ -222,85 +220,6 @@
             process for a module.
             
             Below you will find stubbed out implementations of each, uncomment and populate with your own data
-            </summary>
-            -----------------------------------------------------------------------------
-        </member>
-        <member name="T:DotNetNuke.Modules.DnnInstallableAnnotation.Edit">
-            -----------------------------------------------------------------------------
-            <summary>
-            The EditDnnInstallableAnnotation class is used to manage content
-            
-            Typically your edit control would be used to create new content, or edit existing content within your module.
-            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
-            
-            Because the control inherits from DnnInstallableAnnotationModuleBase you have access to any custom properties
-            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
-            
-            </summary>
-            -----------------------------------------------------------------------------
-        </member>
-        <member name="M:DotNetNuke.Modules.DnnInstallableAnnotation.Edit.Page_Load(System.Object,System.EventArgs)">
-            -----------------------------------------------------------------------------
-            <summary>
-            Page_Load runs when the control is loaded
-            </summary>
-            -----------------------------------------------------------------------------
-        </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.Edit.Title">
-            <summary>
-            Title элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.Edit.txtDescription">
-            <summary>
-            txtDescription элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.Edit.cmdUpdate">
-            <summary>
-            cmdUpdate элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="F:DotNetNuke.Modules.DnnInstallableAnnotation.Edit.cmdCancel">
-            <summary>
-            cmdCancel элемент управления.
-            </summary>
-            <remarks>
-            Автоматически создаваемое поле.
-            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-            </remarks>
-        </member>
-        <member name="T:DotNetNuke.Modules.DnnInstallableAnnotation.Data.DataProvider">
-            -----------------------------------------------------------------------------
-            <summary>
-            An abstract class for the data access layer
-            
-            The abstract data provider provides the methods that a control data provider (sqldataprovider)
-            must implement. You'll find two commented out examples in the Abstract methods region below.
-            </summary>
-            -----------------------------------------------------------------------------
-        </member>
-        <member name="T:DotNetNuke.Modules.DnnInstallableAnnotation.Data.SqlDataProvider">
-            -----------------------------------------------------------------------------
-            <summary>
-            SQL Server implementation of the abstract DataProvider class
-            
-            This concreted data provider class provides the implementation of the abstract methods 
-            from data dataprovider.cs
-            
-            In most cases you will only modify the Public methods region below.
             </summary>
             -----------------------------------------------------------------------------
         </member>

@@ -65,14 +65,6 @@ namespace DotNetNuke.Modules.DnnInstallableAnnotation
                     {
                         txtHeight.Text = Settings["Height"].ToString();
                     }
-                    if (Settings.Contains("DefaultFileName"))
-                    {
-                        txtDefaultFileName.Text = Settings["DefaultFileName"].ToString();
-                    }
-                    if (Settings.Contains("UseHttpHandlers"))
-                    {
-                        ckbUseHttpHandlers.Checked = Boolean.Parse(Settings["UseHttpHandlers"].ToString());
-                    }
                 }
             }
             catch (Exception exc) //Module failed to load
@@ -97,8 +89,6 @@ namespace DotNetNuke.Modules.DnnInstallableAnnotation
                 modules.UpdateModuleSetting(ModuleId, "URL", txtUrl.Text);
                 modules.UpdateModuleSetting(ModuleId, "Width", txtWidth.Text);
                 modules.UpdateModuleSetting(ModuleId, "Height", txtHeight.Text);
-                modules.UpdateModuleSetting(ModuleId, "DefaultFileName", txtDefaultFileName.Text);
-                modules.UpdateModuleSetting(ModuleId, "UseHttpHandlers", ckbUseHttpHandlers.Checked.ToString().ToLower());
             }
             catch (Exception exc) //Module failed to load
             {
