@@ -151,6 +151,7 @@
     <Content Include="releasenotes.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\DataProvider.cs" />
     <Compile Include="View.ascx.cs">
       <DependentUpon>View.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -182,6 +183,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="BuildScripts\ModulePackage.targets" />
+    <None Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
     <None Include="Providers\DataProviders\SqlDataProvider\01.00.00.SqlDataProvider" />
     <None Include="DNNModule.dnn">
       <SubType>Designer</SubType>
